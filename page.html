@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประเภทห้องพัก - The Paradise Hotel</title>
+    <link rel="stylesheet" href="style.css"> <!-- << สำคัญมาก: ลิงก์ไปยัง CSS ไฟล์เดิม -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <nav class="main-nav">
+   
+</nav>
+
+</head>
+<body>
+
+    <!-- ======== ใช้ Header เดิมจาก index.html ======== -->
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">The Paradise Hotel</a> <!-- << เปลี่ยน # เป็น index.html เพื่อให้คลิกกลับหน้าแรกได้ -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">หน้าแรก</a></li> <!-- << เปลี่ยน # เป็น index.html -->
+                    <li><a href="page.html">ห้องพัก</a></li> <!-- << ชี้มาที่ตัวเอง -->
+                    <li><a href="page2.html">สิ่งอำนวยความสะดวก</a></li>
+                    <li><a href="#">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ======== ส่วนเนื้อหาของหน้าห้องพัก ======== -->
+        <section id="room-details-section" class="container" style="padding-top: 4rem; padding-bottom: 4rem;">
+            <h1>ประเภทห้องพักทั้งหมดของเรา</h1>
+            <p>เลือกห้องพักที่เหมาะกับสไตล์การพักผ่อนของคุณ</p>
+            
+            <!-- ใช้ Room Grid เดิม แต่เพิ่มรายละเอียดได้ -->
+            <div class="room-grid" style="margin-top: 2rem;">
+                <!-- Room Card 1 -->
+                <div class="room-card">
+                    <img src="https://placehold.co/600x400/EFEFEF/333?text=Standard+Room" alt="ห้องสแตนดาร์ด">
+                    <div class="room-card-content">
+                        <h3>ห้องสแตนดาร์ด (Standard Room)</h3>
+                        <p>ห้องพักสะดวกสบายพร้อมสิ่งอำนวยความสะดวกครบครัน เหมาะสำหรับการพักผ่อนส่วนตัว</p>
+                        <ul style="list-style-position: inside; margin: 1rem 0;">
+                            <li>เตียงคิงไซส์</li>
+                            <li>เครื่องปรับอากาศ</li>
+                            <li>Wi-Fi ฟรี</li>
+                            <li>ทีวีจอแบน</li>
+                        </ul>
+                        <div class="room-price">ราคา ฿1,500 / คืน</div>
+                        <a href="#" class="btn-secondary">จองเลย</a>
+                    </div>
+                </div>
+                <!-- Room Card 2 -->
+                <div class="room-card" id="deluxe"> <!-- เพิ่ม id="deluxe" ไว้สำหรับ anchor link -->
+                    <img src="https://placehold.co/600x400/E2E2E2/333?text=Deluxe+Room" alt="ห้องดีลักซ์">
+                    <div class="room-card-content">
+                        <h3>ห้องดีลักซ์ (Deluxe Room)</h3>
+                        <p>กว้างขวางและหรูหรากว่า พร้อมวิวเมืองที่สวยงาม เหมาะสำหรับคู่รักหรือนักธุรกิจ</p>
+                         <ul style="list-style-position: inside; margin: 1rem 0;">
+                            <li>เตียงคิงไซส์ / เตียงแฝด</li>
+                            <li>ระเบียงส่วนตัว</li>
+                            <li>อ่างอาบน้ำ</li>
+                            <li>ชุดคลุมอาบน้ำ</li>
+                        </ul>
+                        <div class="room-price">ราคา ฿2,500 / คืน</div>
+                        <a href="#" class="btn-secondary">จองเลย</a>
+                    </div>
+                </div>
+                <!-- เพิ่มห้องพักอื่นๆ ตามต้องการ -->
+            </div>
+
+        </section>
+    </main>
+
+    <!-- ======== ใช้ Footer เดิมจาก index.html ======== -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2024 The Paradise Hotel. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

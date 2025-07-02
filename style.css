@@ -1,0 +1,244 @@
+/* ======== การตั้งค่าพื้นฐานและตัวแปร ======== */
+:root {
+    --primary-color: #005A8D;   /* สีน้ำเงินเข้ม */
+    --secondary-color: #F2A900; /* สีเหลือง/ทอง */
+    --light-gray-color: #f4f4f4;
+    --dark-gray-color: #333;
+    --text-color: #555;
+    --font-family: 'Kanit', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: var(--dark-gray-color);
+    margin-bottom: 1rem;
+}
+
+/* ======== Header & Navigation ======== */
+.main-header {
+    background: #fff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* ======== Hero Section ======== */
+#hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1920x600/333/FFF?text=Hotel+View'); /* เปลี่ยนเป็น path รูปภาพของคุณ */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* ======== Booking Form Section ======== */
+#booking-section {
+    background: #fff;
+    padding: 2rem 0;
+    margin-top: -50px; /* ดึงฟอร์มขึ้นมาทับ Hero เล็กน้อย */
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* ทำให้แต่ละ input กว้างเท่ากัน */
+}
+
+.form-group-full {
+    flex-basis: 100%; /* สำหรับปุ่มที่ต้องการให้กว้างเต็มแถวในบางขนาดจอ */
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--dark-gray-color);
+}
+
+.form-group input[type="date"],
+.form-group input[type="number"] {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d99800;
+}
+
+/* ======== Room Showcase Section ======== */
+#room-showcase {
+    padding: 4rem 0;
+    background-color: var(--light-gray-color);
+}
+
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.room-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.room-card-content {
+    padding: 1.5rem;
+}
+
+.room-card h3 {
+    margin-top: 0;
+}
+
+.room-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #00446b;
+}
+
+
+/* ======== Footer ======== */
+.main-footer {
+    background: var(--dark-gray-color);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* ======== Responsive Design ======== */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .booking-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}

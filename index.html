@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จองห้องพัก - The Paradise Hotel</title>
+    <link rel="stylesheet" href="page.html">
+    <link rel="stylesheet" href="style.css">
+    <!-- เพิ่ม Google Fonts ภาษาไทยเพื่อความสวยงาม -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <nav class="main-nav">
+
+    </nav>
+</head>
+
+<body>
+
+
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">The kong </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="page.html">ห้องพัก</a></li>
+                    <li><a href="page2.html">สิ่งอำนวยความสะดวก</a></li>
+                    <li><a href="#">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="hero">
+            <div class="hero-content">
+                <h1>ค้นพบการพักผ่อนที่ดีที่สุด</h1>
+                <p>เพื่อประสบการณ์ที่ดีในการพักผ่อนของคุณ</p>
+            </div>
+        </section>
+
+
+        <section id="booking-section" class="container">
+            <h2>ค้นหาและจองห้องพัก</h2>
+            <form class="booking-form">
+                <div class="form-group">
+                    <label for="checkin-date">วันเช็คอิน</label>
+                    <input type="date" id="checkin-date" name="checkin-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout-date">วันเช็คเอาท์</label>
+                    <input type="date" id="checkout-date" name="checkout-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="adults">ผู้ใหญ่</label>
+                    <input type="number" id="adults" name="adults" min="1" value="2" required>
+                </div>
+                <div class="form-group">
+                    <label for="children">เด็ก</label>
+                    <input type="number" id="children" name="children" min="0" value="0">
+                </div>
+                <div class="form-group form-group-full">
+                    <button type="submit" class="btn-primary">ค้นหาห้องว่าง</button>
+                </div>
+            </form>
+        </section>
+
+
+        <section id="room-showcase">
+            <div class="container">
+                <h2>ประเภทห้องพักของเรา</h2>
+                <div class="room-grid">
+                    <!-- Room Card 1 -->
+                    <div class="room-card">
+                        <img src="https://placehold.co/600x400/EFEFEF/333?text=Standard+Room" alt="ห้องสแตนดาร์ด">
+                        <div class="room-card-content">
+                            <h3>ห้องสแตนดาร์ด (Standard Room)</h3>
+                            <p>ห้องพักสะดวกสบายพร้อมสิ่งอำนวยความสะดวกครบครัน เหมาะสำหรับการพักผ่อนส่วนตัว</p>
+                            <div class="room-price">เริ่มต้น ฿1,500 / คืน</div>
+                            <a href="#" class="btn-secondary">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+                    <!-- Room Card 2 -->
+                    <div class="room-card">
+                        <img src="https://placehold.co/600x400/E2E2E2/333?text=Deluxe+Room" alt="ห้องดีลักซ์">
+                        <div class="room-card-content">
+                            <h3>ห้องดีลักซ์ (Deluxe Room)</h3>
+                            <p>กว้างขวางและหรูหรากว่า พร้อมวิวเมืองที่สวยงาม เหมาะสำหรับคู่รักหรือนักธุรกิจ</p>
+                            <div class="room-price">เริ่มต้น ฿2,500 / คืน</div>
+                            <a href="#" class="btn-secondary">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+                    <!-- Room Card 3 -->
+                    <div class="room-card">
+                        <img src="https://placehold.co/600x400/DEDEDE/333?text=Suite+Room" alt="ห้องสวีท">
+                        <div class="room-card-content">
+                            <h3>ห้องสวีท (Suite Room)</h3>
+                            <p>ที่สุดแห่งความหรูหรา พร้อมห้องนั่งเล่นแยกเป็นสัดส่วนและบริการระดับพรีเมียม</p>
+                            <div class="room-price">เริ่มต้น ฿4,500 / คืน</div>
+                            <a href="#" class="btn-secondary">ดูรายละเอียด</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======== ส่วน Footer ======== -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2024 The Paradise Hotel. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
